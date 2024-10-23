@@ -4,8 +4,27 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        
         mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            url = "https://repo1.maven.org/maven2/"
+        }
+        maven {
+            url "https://repo.spring.io/release"
+        }
+        maven {
+            url "https://repository.jboss.org/maven2"
+        }
+        maven {
+            url 'https://repo.jenkins-ci.org/public/'
+        }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
+        maven { url 'https://repo.gradle.org/gradle/libs-releases/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -19,8 +38,27 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
-
+        
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            url = "https://repo1.maven.org/maven2/"
+        }
+        maven {
+            url "https://repo.spring.io/release"
+        }
+        maven {
+            url "https://repository.jboss.org/maven2"
+        }
+        maven {
+            url 'https://repo.jenkins-ci.org/public/'
+        }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
+        maven { url 'https://repo.gradle.org/gradle/libs-releases/' }
     }
     apply plugin: 'com.github.dcendents.android-maven'
 }
